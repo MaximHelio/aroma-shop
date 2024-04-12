@@ -44,6 +44,22 @@ const MainLayout = ({
         </nav>
       </header>
       <main className="pt-[61px] lg:pt-[110px]">{children}</main>
+      <footer className="mt-12 lg:mt-20 flex bg-[#383838] flex flex-col items-center justify-between py-4 lg:py-8">
+        <Image
+          src="/images/kakao.png"
+          alt="Kakao"
+          width={50}
+          height={50}
+          sizes="100vw"
+          className="my-2"
+        />
+        <ul className="flex flex-col items-center justify-between text-white text-xs lg:text-sm">
+          <li className="my-2">제품문의 방법</li>
+          <li className="my-2">1. 위 카카오톡 링크를 누르세요.</li>
+          <li className="my-2">2. PC버전 카카오톡 친구추가 방법</li>
+        </ul>
+        <small className="mt-4 text-gray-400">Copyright ⓒ 2024 Aroma All rights reserved. Tel 010-</small>
+      </footer>
     </div>
   )
 }
