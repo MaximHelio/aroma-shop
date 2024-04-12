@@ -6,6 +6,7 @@ import Link from "next/link"
 import {Button, Drawer} from "@mui/material"
 import MenuIcon from "@mui/icons-material/Menu"
 import MainTitle from "@/app/main-title"
+import Users from "@/components/users/users"
 
 export const menu = [
   {id: "vancleef", name: "반클리프"},
@@ -43,7 +44,7 @@ const MainLayout = ({
           <div className="flex-1"></div>
           <MainLayoutMenu prefix="lg" />
           <div className="ml-4 flex items-center">
-            <span className="mr-4 text-base cursor-pointer">로그인</span>
+            <Users />
             <Button
               className="!bg-yellow-600 hover:!bg-amber-200"
               variant="contained"
