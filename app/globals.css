@@ -16,7 +16,14 @@
   }
 }
 
+@font-face {
+  font-family: "NanumGothic";
+  font-display: block;
+  src: local("NanumGothic"), url("/fonts/NanumGothic.woff2") format("woff2");
+}
+
 body {
+  font-family: "NanumGothic";
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
